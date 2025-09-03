@@ -1,6 +1,6 @@
-# Inistock Trend Project 🚀
+# Stock Trend Prediction 🚀
 
-The **Inistock Trend Project** is an automated tool for analyzing stock trends on the **Indonesia Stock Exchange (IDX)**.  
+The **Stock Trend Prediction** is an automated tool for analyzing stock trends on the **Indonesia Stock Exchange (IDX)**.  
 It uses historical data, technical indicators, and the **Kalman Filter** algorithm to determine stock trends and saves the results in **Excel** format.
 
 ---
@@ -59,9 +59,8 @@ openpyxl
 ## ▶️ How to Use
 
 1. Prepare stocks_name.xlsx in the data/ directory.
-```bash
-Ensure it has a column stocks_name containing the stock tickers.
-```
+ - Ensure it has a column stocks_name containing the stock tickers.
+
 2. Install required libraries:
 ```bash
 pip install -r requirements.txt
