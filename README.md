@@ -1,64 +1,67 @@
-# Inistock Trend Project
+# Inistock Trend Project 🚀
 
-This project is an automated tool for analyzing stock trends on the Indonesia Stock Exchange (IDX). By using historical data, this project applies various technical indicators and the Kalman Filter algorithm to determine the overall trend of each stock, then saves the results in an Excel file format.
+![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Last Commit](https://img.shields.io/github/last-commit/username/inistock-trend-project)
 
----
-
-## Key Features
-
-* **Automated Data Retrieval:** Uses the `yfinance` library to download historical stock data.
-* **Multi-Method Trend Analysis:** Analyzes stock trends using three different approaches:
-    1.  **Moving Average (MA):** Compares the closing price with MA.
-    2.  **Relative Strength Index (RSI):** Measures momentum with a 14-day RSI.
-    3.  **Kalman Filter:** Uses the Kalman Filter to predict price trends.
-* **Overall Trend Determination:** Combines the results of the three methods to determine the final trend (`Bullish`, `Bearish`, or `Mixed`).
-* **Model Validation:** Measures the accuracy of the Kalman Filter model using Mean Squared Error (MSE) to ensure consistency and reliability.
-* **Structured Output:** Saves the analysis results to an `Output_Trend.xlsx` file containing the stock name, overall trend, and recommended `Buy`, `Target`, and `Stop Loss` prices.
+The **Inistock Trend Project** is an automated tool for analyzing stock trends on the **Indonesia Stock Exchange (IDX)**.  
+It uses historical data, technical indicators, and the **Kalman Filter** algorithm to determine stock trends and saves the results in **Excel** format.
 
 ---
 
-## Project Structure
+## 🔑 Key Features
+
+- **Automated Data Retrieval:** Automatically fetch stock data using `yfinance`.
+- **Multi-Method Trend Analysis:** Uses 3 different approaches:
+  1. **Moving Average (MA):** Compares closing price with MA.
+  2. **Relative Strength Index (RSI):** Measures momentum using 14-day RSI.
+  3. **Kalman Filter:** Predicts price trends with the Kalman Filter algorithm.
+- **Overall Trend Determination:** Combines results from all three methods to generate a final trend (`Bullish`, `Bearish`, `Mixed`).
+- **Model Validation:** Evaluates Kalman Filter accuracy using **Mean Squared Error (MSE)**.
+- **Structured Output:** Saves analysis results to `Output_Trend.xlsx` with columns **Stock**, **Overall Trend**, **Buy**, **Target**, and **Stop Loss**.
+
+---
+
+## 📂 Project Structure
 
 inistock_trend_project/
 │── data/
-│   └── stocks_name.xlsx     # List of stock names to be processed
+│ └── stocks_name.xlsx    # List of stocks to process
 │
 │── utils/
-│   ├── kalman_utils.py      # Function for tuning the Kalman Filter
-│   ├── indicators.py        # Function for computing technical indicators (RSI)
-│   ├── rounding.py          # Function for rounding stock prices according to tick size
+│ ├── kalman_utils.py     # Kalman Filter tuning functions
+│ ├── indicators.py       # Technical indicator calculations (RSI)
+│ ├── rounding.py         # Stock price rounding according to tick size
 │
 │── core/
-│   ├── stock_processor.py   # Main logic for processing a single stock
+│ ├── stock_processor.py  # Main logic for processing a single stock
 │
-│── main.py                  # Main script to run the entire process
-│── requirements.txt         # List of required libraries
-│── README.md                # Project documentation
+│── main.py               # Main script to run the project
+│── requirements.txt      # Required Python libraries
+│── README.md             # Project documentation---
 
 ---
 
-## Requirements
+## ⚙️ Requirements
 
-This project requires Python 3.6+ and the following libraries, which can be installed from `requirements.txt`:
-pandas
-yfinance
-scikit-learn
-pykalman
-openpyxl
+Python 3.6+ and the following libraries (install via `requirements.txt`):
 
----
+```bash
+pip install pandas yfinance scikit-learn pykalman openpyxl
 
-## How to Use
+▶️ How to Use
 
-1.  **Make sure your `stocks_name.xlsx` file is ready.** This file should be located in the `data/` directory and have a column named `stocks_name` that contains a list of stock tickers (e.g., `TLKM`, `BBCA`).
-2.  **Install all necessary libraries** by running the following command in your terminal:
-    ```
-    pip install -r requirements.txt
-    ```
-3.  **Run the main script** from the project directory:
-    ```
-    python main.py
-    ```
+1. Prepare stocks_name.xlsx in the data/ directory.
+
+   Ensure it has a column stocks_name containing the stock tickers.
+
+2. Install required libraries:
+
+   pip install -r requirements.txt
+
+3. Run the main script:
+
+   python main.py
 
 ---
 
