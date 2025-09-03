@@ -1,9 +1,5 @@
 # Inistock Trend Project 🚀
 
-![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Last Commit](https://img.shields.io/github/last-commit/username/inistock-trend-project)
-
 The **Inistock Trend Project** is an automated tool for analyzing stock trends on the **Indonesia Stock Exchange (IDX)**.  
 It uses historical data, technical indicators, and the **Kalman Filter** algorithm to determine stock trends and saves the results in **Excel** format.
 
@@ -25,31 +21,38 @@ It uses historical data, technical indicators, and the **Kalman Filter** algorit
 ## 📂 Project Structure
 
 inistock_trend_project/
-│── data/
+├── data/
 │ └── stocks_name.xlsx    # List of stocks to process
-│
-│── utils/
+├── utils/
 │ ├── kalman_utils.py     # Kalman Filter tuning functions
 │ ├── indicators.py       # Technical indicator calculations (RSI)
-│ ├── rounding.py         # Stock price rounding according to tick size
-│
-│── core/
-│ ├── stock_processor.py  # Main logic for processing a single stock
-│
-│── main.py               # Main script to run the project
-│── requirements.txt      # Required Python libraries
-│── README.md             # Project documentation---
+│ └── rounding.py         # Stock price rounding according to tick size
+├── core/
+│ └── stock_processor.py  # Main logic for processing a single stock
+├── main.py               # Main script to run the project
+├── requirements.txt      # Required Python libraries
+└── README.md             # Project documentation
 
 ---
 
 ## ⚙️ Requirements
 
-Python 3.6+ and the following libraries (install via `requirements.txt`):
+- **Python 3.6+**
+- Install dependencies via `requirements.txt`:
 
 ```bash
-pip install pandas yfinance scikit-learn pykalman openpyxl
+pip install -r requirements.txt
 
-▶️ How to Use
+requirements.txt should include:
+
+pandas
+yfinance
+scikit-learn
+pykalman
+openpyxl
+
+
+## ▶️ How to Use
 
 1. Prepare stocks_name.xlsx in the data/ directory.
 
@@ -65,7 +68,7 @@ pip install pandas yfinance scikit-learn pykalman openpyxl
 
 ---
 
-## Output Results
+## 📊 Output Results
 
 After the script finishes, a file named `Output_Trend.xlsx` will be created in the main directory. This file contains a table with the following columns:
 
