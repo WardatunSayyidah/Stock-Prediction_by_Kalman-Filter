@@ -21,6 +21,7 @@ It uses historical data, technical indicators, and the **Kalman Filter** algorit
 ## 📂 Project Structure
 
 inistock_trend_project/
+```bash
 ├── data/
 │ └── stocks_name.xlsx    # List of stocks to process
 ├── utils/
@@ -32,7 +33,7 @@ inistock_trend_project/
 ├── main.py               # Main script to run the project
 ├── requirements.txt      # Required Python libraries
 └── README.md             # Project documentation
-
+```
 ---
 
 ## ⚙️ Requirements
