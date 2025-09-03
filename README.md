@@ -42,31 +42,33 @@ inistock_trend_project/
 
 ```bash
 pip install -r requirements.txt
+```
 
 requirements.txt should include:
-
+```bash
 pandas
 yfinance
 scikit-learn
 pykalman
 openpyxl
+```
 
 ---
 
 ## ▶️ How to Use
 
 1. Prepare stocks_name.xlsx in the data/ directory.
-
-   Ensure it has a column stocks_name containing the stock tickers.
-
+```bash
+Ensure it has a column stocks_name containing the stock tickers.
+```
 2. Install required libraries:
-
-   pip install -r requirements.txt
-
+```bash
+pip install -r requirements.txt
+```
 3. Run the main script:
-
-   python main.py
-
+```bash
+python main.py
+```
 ---
 
 ## 📊 Output Results
