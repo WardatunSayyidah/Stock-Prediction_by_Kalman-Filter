@@ -72,7 +72,7 @@ python main.py
 
 ## 📊 Output Results
 
-After the script finishes, a file named `Output_Trend.xlsx` will be created in the main directory. This file contains a table with the following columns:
+After the script finishes, a file named Output_Trend.xlsx will be created in the main directory. This file contains the results of the prediction for July 7, 2025, in a table with the following columns:
 
 | Stock | Overall_Trend | Buy | Target_Price | Stop_Loss |
 | :---: | :-----------: | :-: | :----------: | :-------: |
