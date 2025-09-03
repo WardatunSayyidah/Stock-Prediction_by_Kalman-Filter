@@ -19,9 +19,8 @@ It uses historical data, technical indicators, and the **Kalman Filter** algorit
 ---
 
 ## 📂 Project Structure
-
-inistock_trend_project/
 ```bash
+stock_prediction_by_kalman_filter/
 ├── data/
 │ └── stocks_name.xlsx    # List of stocks to process
 ├── utils/
